@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="6 13 50 44">
+  
+  <rect fill="#FAD3C3" rx="8" height="44" width="50" y="13" x="6"></rect>
+
+  
+  <polygon fill="#FB622B" points="6,24 32,13 56,24 32,35"></polygon>
+
+  
+  <path stroke-linejoin="round" stroke-width="2" stroke="#FB622B" fill="none" d="M20 31 V37 C20 40 25 42 32 42 C39 42 44 40 44 37 V31"></path>
+
+  
+  <rect fill="#FB622B" rx="1" height="22" width="2" y="26.6" x="11.5"></rect>
+
+  
+  <path fill="#FB622B" d="M9.9 49 
+       Q12.6 46 15.3 49 
+       L15.3 55 
+       L9.9 55 
+       Z"></path>
+</svg>
