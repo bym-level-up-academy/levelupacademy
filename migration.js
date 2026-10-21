@@ -1,6 +1,6 @@
 (() => {
   let config = {};
-  const ready = fetch('/metaforma.json').then(r => r.json()).then(data => config = data).catch(() => {});
+  const ready = fetch('/levelupacademy/metaforma.json').then(r => r.json()).then(data => config = data).catch(() => {});
   const dialog = document.createElement('dialog');
   dialog.className = 'migration-dialog';
   dialog.setAttribute('aria-labelledby', 'migration-dialog-title');

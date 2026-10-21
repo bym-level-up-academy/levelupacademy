@@ -1,7 +1,7 @@
 (function (root) {
   const catalog = Object.freeze({
-    mindset: {title:'Formation mindset', price:199700, image:'/assets/50180fa349af5fe39166.jpg', url:'/products/formation-mindset'},
-    immobilier: {title:'Acheter sa résidence principale en toute sécurité', price:199700, image:'/assets/9c478c6e1dfdc152cfa7.png', url:'/products/formation-immo'}
+    mindset: {title:'Formation mindset', price:199700, image:'/levelupacademy/assets/50180fa349af5fe39166.jpg', url:'/levelupacademy/products/formation-mindset'},
+    immobilier: {title:'Acheter sa résidence principale en toute sécurité', price:199700, image:'/levelupacademy/assets/9c478c6e1dfdc152cfa7.png', url:'/levelupacademy/products/formation-immo'}
   });
   function clean(value) {
     const state = {};

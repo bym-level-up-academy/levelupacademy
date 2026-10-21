@@ -1,2 +1,2 @@
 let subscribers={};function subscribe(eventName,callback){return subscribers[eventName]===void 0&&(subscribers[eventName]=[]),subscribers[eventName]=[...subscribers[eventName],callback],function(){subscribers[eventName]=subscribers[eventName].filter(cb=>cb!==callback)}}function publish(eventName,data){if(subscribers[eventName]){const promises=subscribers[eventName].map(callback=>callback(data));return Promise.all(promises)}else return Promise.resolve()}
-//# sourceMappingURL=/cdn/shop/t/2/assets/pubsub.js.map?v=25310214064522200911761476595
+//# sourceMappingURL=/cdn/shop/t/2/levelupacademy/assets/pubsub.js.map?v=25310214064522200911761476595

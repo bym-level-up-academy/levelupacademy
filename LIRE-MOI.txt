@@ -1,36 +1,16 @@
-LEVEL UP ACADEMY — CODE COMPLET DU SITE DE DEMONSTRATION
+CORRECTIF GITHUB PAGES — LEVEL UP ACADEMY
 
-CONTENU
-Six pages HTML : accueil, Mindset, Immobilier, A propos, Contact et politique de confidentialite.
-Le dossier assets contient les images, polices et styles locaux.
-Les fichiers demo-cart.js, demo-cart.css et cart-model.js gerent le faux panier.
-migration.js et metaforma.json gerent les raccordements en attente.
-MANIFEST-SHA256.json liste tous les fichiers du site et leurs empreintes.
+Adresse cible : https://bym-level-up-academy.github.io/levelupacademy/
 
-LANCEMENT LOCAL
-1. Extraire TOUTE cette archive dans un dossier.
-2. Ouvrir un terminal dans ce dossier (celui contenant index.html).
-3. Executer : python3 -m http.server 8000
-4. Ouvrir http://localhost:8000 dans le navigateur.
-Un double-clic sur index.html ne suffit pas : les liens et ressources utilisent la racine du serveur.
+Cette archive contient uniquement les fichiers a remplacer et .nojekyll.
+Les chemins des CSS, scripts, images, polices et liens internes commencent maintenant par /levelupacademy/.
 
-HEBERGEMENT
-Le contenu peut etre place a la racine d'un hebergement de site statique.
-Il n'y a aucune compilation a effectuer ni dependance npm a installer.
+1. Extraire completement cette archive.
+2. Copier son contenu dans le dossier local du depot, en fusionnant les dossiers et remplacant les fichiers existants. Ne pas supprimer les autres fichiers du depot : les images non modifiees ne sont pas incluses.
+3. Commit puis push vers main. Ou televerser le contenu extrait dans le depot GitHub via Add file > Upload files, puis Commit changes. Ne pas televerser seulement le ZIP.
+4. Attendre la fin du deploiement Pages, puis recharger avec Ctrl+Maj+R.
 
-METAFORMA
-Ceci est un export HTML/CSS/JavaScript, pas un format d'import Metaforma certifie.
-La possibilite d'importer le site complet ou d'integrer son code doit etre verifiee dans l'editeur Metaforma.
-Si cette fonction n'existe pas, on peut conserver le site sur un autre hebergement et relier ses boutons a Metaforma.
-
-DEMONSTRATION ET RACCORDEMENTS
-Le panier est une simulation sans commande ni paiement. Les quantites sont stockees dans sessionStorage.
-Les prix affiches sont repris du site original.
-Les formulaires ne transmettent pas les donnees saisies.
-Dans metaforma.json, les quatre cles espace, mindset, immobilier et contact attendent les URL HTTPS definitives.
-Les boutons Ajouter au panier utilisent la simulation : pour les convertir en inscriptions, il faut remplacer leur comportement par les liens Metaforma correspondants.
-Un lien contact configure redirige vers sa destination sans transmettre les champs saisis.
-
-AVANT MISE EN SERVICE REELLE
-Actualiser les textes de l'ancien site (promotion datee, indications CPF/Qualiopi et references Shopify dans la politique de confidentialite).
-Verifier le rendu et les raccordements dans le navigateur.
+La configuration GitHub Pages reste main / (root).
+LIRE-MOI.txt et MANIFEST-SHA256.json remplacent les fichiers de documentation precedents.
+Le panier reste une demonstration, sans commande ni paiement.
+Les chemins ciblent precisement /levelupacademy/ ; ils devront etre adaptes si l'adresse du site change.

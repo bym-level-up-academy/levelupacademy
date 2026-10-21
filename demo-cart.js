@@ -25,7 +25,7 @@
     cart.querySelector('.demo-cart-total strong').textContent = money(sum.amount);
     cart.querySelector('.demo-cart-footer').hidden = !sum.count;
     if (!sum.count) {
-      items.innerHTML='<div class="demo-cart-empty"><h2>Votre panier est vide</h2><a class="button" href="/#formations" data-continue-shopping>Continuer les achats</a><p>Découvrez nos formations et ajoutez-les pour essayer le panier.</p></div>';
+      items.innerHTML='<div class="demo-cart-empty"><h2>Votre panier est vide</h2><a class="button" href="/levelupacademy/#formations" data-continue-shopping>Continuer les achats</a><p>Découvrez nos formations et ajoutez-les pour essayer le panier.</p></div>';
       return;
     }
     items.innerHTML = '<div class="demo-cart-columns"><span>Produit</span><span>Total</span></div>' + Object.entries(state).map(([key,qty]) => {
