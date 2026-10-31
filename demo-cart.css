@@ -40,3 +40,50 @@ body.demo-cart-open{overflow:hidden}
 @keyframes demo-item-in{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:380px){.demo-cart-panel{padding:0 1.4rem}.demo-cart-item{grid-template-columns:6rem minmax(0,1fr);gap:1rem}.demo-cart-item img{width:6rem}.demo-cart-line-total{grid-column:2}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.demo-cart,.demo-cart-panel,.demo-cart-item,.button,.scroll-trigger,.animate--ambient img{animation:none!important;transition:none!important}.scroll-trigger{opacity:1!important;transform:none!important}}
+
+/* Boutons orange et statut des formations. */
+:is(.color-scheme-9adee854-8061-415c-a19d-e965cf9d9900,
+    .color-scheme-febc5dc7-fa66-4510-96e0-ac5557e259e4,
+    .color-scheme-58dd1343-f0b4-40e2-bbb7-68a012f78bfb,
+    .color-scheme-ed0034a5-39a3-4890-9b8e-d349f8d67d53) .button--secondary,
+.color-scheme-cfcd434f-ecd6-4b70-aafd-1f2416eb181c .button,
+.demo-add-card,
+.formation-in-progress,
+#Slide-template--26260976992600__slideshow-1 .button,
+#Slide-template--26260976992600__slideshow-1 a.button {
+  --color-button: 251,98,43 !important;
+  --color-button-text: 255,255,255 !important;
+  --alpha-button-background: 1;
+  background-color: #fb622b !important;
+  color: #fff !important;
+}
+.formation-in-progress:disabled {
+  opacity: 1;
+  cursor: default;
+}
+/* Les deux boutons restent en bas de leur carte, meme si le texte se replie. */
+#Slider-template--26260976992600__multicolumn_bHgLpy > li {
+  display: flex;
+}
+#Slider-template--26260976992600__multicolumn_bHgLpy .multicolumn-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#Slider-template--26260976992600__multicolumn_bHgLpy .multicolumn-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+#Slider-template--26260976992600__multicolumn_bHgLpy .multicolumn-card__info > .link {
+  margin-bottom: 1.5rem;
+}
+#Slider-template--26260976992600__multicolumn_bHgLpy .demo-add-card {
+  margin-top: auto;
+  max-width: 100%;
+  min-height: 4.4rem;
+  padding: 1rem 2rem;
+  white-space: normal;
+  line-height: 1.35;
+}

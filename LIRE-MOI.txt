@@ -4,11 +4,13 @@ Base : branche main du depot public, recuperee le 31 octobre 2026.
 Ce ZIP contient uniquement les fichiers modifies, pas le site complet.
 
 1. Decompresser dans un dossier temporaire.
-2. Copier index.html et cart-model.js a la racine du depot local.
+2. Copier index.html, cart-model.js et demo-cart.css a la racine du depot local.
 3. Copier products/formation-immo/index.html dans le meme sous-dossier du depot.
 4. Verifier git diff avant de committer et pousser.
 
-Modifications : titre Nos formations aligne a gauche ; immobilier marque En cours sur l'accueil et sa page ; prix et metadonnees de prix retires ; ajout immobilier au panier retire des deux pages et du catalogue de demo. Les anciennes lignes immobilier du panier de session sont ignorees.
+Modifications : titre Nos formations aligne a gauche ; immobilier marque En cours de creation dans un bouton desactive sur l'accueil et sa page ; prix et metadonnees de prix retires ; ajout immobilier au panier retire des deux pages et du catalogue de demo. Les anciennes lignes immobilier du panier de session sont ignorees.
 
 Les chemins du domaine personnalise et les statistiques existantes sont conserves.
 Si le depot local contient des changements pas encore pousses, fusionner les modifications plutot que remplacer les fichiers sans comparaison.
+
+Boutons blancs a texte orange passes en orange (#fb622b) a texte blanc, via demo-cart.css commun aux pages. Les boutons de statut et d'ajout au panier sont alignes en bas des cartes et le texte peut revenir a la ligne.
