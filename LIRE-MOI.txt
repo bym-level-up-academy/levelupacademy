@@ -20,3 +20,5 @@ Correction : dans le cadre des formations, les boutons conservent leur couleur d
 Correctif mobile : les boutons sur fond orange du bandeau presentent leur fond eclairci des le premier affichage sur appareil tactile, sans attendre le survol simule par le premier toucher. Le cadre bleu n'est pas cible. Si la version precedente est deja appliquee, seul demo-cart.css doit etre remplace.
 
 Harmonisation : les actions des fiches formation occupent toute la largeur du bloc de contenu, avec une hauteur minimale de 48 px, le meme texte centre et 16 px entre groupes de boutons. Les couleurs ne sont pas modifiees par ces nouvelles regles. Seul demo-cart.css est a remplacer si les correctifs precedents sont deja appliques ; conserver vos HTML personnalises.
+
+Extension du correctif de contraste aux deux palettes a fond orange, dont Je propulse mon savoir : eclaircissement permanent sur mobile et ordinateur. La palette du cadre bleu reste exclue. Seul demo-cart.css est a remplacer.

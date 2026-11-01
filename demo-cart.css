@@ -86,13 +86,11 @@ body.demo-cart-open{overflow:hidden}
   line-height: 1.35;
 }
 
-/* Sur ecran tactile, le bouton du bandeau est visible avant tout toucher.
-   Le theme applique normalement cet eclaircissement uniquement au survol. */
-@media (hover: none), (pointer: coarse) {
-  #Slide-template--26260976992600__slideshow-1 .button::after,
-  .color-scheme-ed0034a5-39a3-4890-9b8e-d349f8d67d53 .button::after {
-    background-color: rgba(255, 255, 255, .3);
-  }
+/* Sur fond orange, rendre le fond du bouton distinct des le premier affichage. */
+#Slide-template--26260976992600__slideshow-1 .button::after,
+.color-scheme-ed0034a5-39a3-4890-9b8e-d349f8d67d53 .button::after,
+.color-scheme-cfcd434f-ecd6-4b70-aafd-1f2416eb181c .button::after {
+  background-color: rgba(255, 255, 255, .3);
 }
 
 /* Dimensions et espacement communs aux actions des fiches formation. */
