@@ -16,3 +16,5 @@ Si le depot local contient des changements pas encore pousses, fusionner les mod
 Boutons blancs a texte orange passes en orange (#fb622b) a texte blanc, via demo-cart.css commun aux pages. Les boutons de statut et d'ajout au panier sont alignes en bas des cartes et le texte peut revenir a la ligne.
 
 Correction : dans le cadre des formations, les boutons conservent leur couleur d'origine. Le bouton En cours de creation utilise le meme style secondaire que Ajouter au panier.
+
+Correctif mobile : les boutons sur fond orange du bandeau presentent leur fond eclairci des le premier affichage sur appareil tactile, sans attendre le survol simule par le premier toucher. Le cadre bleu n'est pas cible. Si la version precedente est deja appliquee, seul demo-cart.css doit etre remplace.
