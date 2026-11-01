@@ -94,3 +94,43 @@ body.demo-cart-open{overflow:hidden}
     background-color: rgba(255, 255, 255, .3);
   }
 }
+
+/* Dimensions et espacement communs aux actions des fiches formation. */
+.product__info-container .product-form,
+.product__info-container .product-form__buttons,
+.product__info-container .product-form > form {
+  display: block;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+.product__info-container .product-form {
+  margin: 2rem 0 0;
+}
+.product__info-container .product-form__buttons {
+  display: grid;
+  gap: 1.6rem;
+  margin: 1.6rem 0 0 !important;
+}
+.product__info-container .product-form__submit {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  min-height: 4.8rem;
+  margin-bottom: 0;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  align-items: center;
+  justify-content: center;
+}
+/* Les anciens blocs vides ne doivent pas ajouter de marges. */
+.product__info-container > :is(div, p):empty,
+.product__info-container > div:has(> link:only-child) {
+  display: none;
+  margin: 0;
+}
