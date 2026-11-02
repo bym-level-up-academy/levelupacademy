@@ -1,6 +1,6 @@
 (function (root) {
   const catalog = Object.freeze({
-    mindset: {title:'Formation mindset', price:199700, image:'/levelupacademy/assets/50180fa349af5fe39166.jpg', url:'/levelupacademy/products/formation-mindset'},
+    mindset: {title:'Formation mindset', price:59910, image:'/assets/50180fa349af5fe39166.jpg', url:'/products/formation-mindset'},
   });
   function clean(value) {
     const state = {};
